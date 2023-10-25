@@ -1,0 +1,14 @@
+#Index {
+    font-size: 25px;
+    display: inline-block;
+}
+#History {
+    font-size: 25px;
+    display: inline-block;
+}
+/*
+https: //stackoverflow.com/questions/9067892/how-to-align-two-elements-on-the-same-line-without-changing-html
+*/
+#All {
+    display: inline-block;
+}

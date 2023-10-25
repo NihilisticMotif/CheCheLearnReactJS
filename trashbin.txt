@@ -1,3 +1,231 @@
+</>
+ 
+,setDo
+ 
+<>
+<input></input>
+<button>OK</button>
+<button>Reset</button>
+
+ 
+    
+ 
+ 
+ 
+===true
+ 
+/*
+To Do List
+1. ToeTacTic
+ * Marked Button
+2. Linear Algebra Calculator
+ * Matrix Multiplication Calculator (+,\cdot,\odot)
+ * Determinant
+ * Eigan Vector and Eigan Value
+ * Singular Value Decomposition
+ * Gaussian elimination
+ * Matrix Taylor Series
+3. Convey Game
+4. Pages
+5. CSS
+6. Read the Document
+*/
+ 
+    const message='David';
+ 
+    function handleClick() {
+        alert('Hello');
+    }
+ 
+ onClick={handleClick}
+ 
+ onClick={handleClick}
+ 
+    function handleClick() {
+        alert('Hello');
+    }
+ 
+document.getElementById('Square'+id.toString()).style.color = 'red';
+ 
+document.getElementById('Square'+id.toString()).style.color = 'black';
+ 
+        text='';
+ 
+        text='X';
+ 
+const MyButton = ({ name, onClick , num }) => {
+  if (num===undefined){num=name}
+  function handleClick() {
+    onClick(num);
+  }
+  return (
+    <button onClick={handleClick}>
+      {/* https://youtu.be/t6L2ZArc8Cs?si=4zbs4brUqDoop2Qo */}
+      {name}
+    </button>
+  );
+}
+ 
+        text='O'
+ 
+ text=''
+ 
+,text
+ 
+{}
+ 
+  function ChangeColor() {
+    if()
+  }
+ 
+ onClick 
+ 
+activate
+ 
+        
+ 
+activate=true;
+ 
+activate=false;
+ 
+        
+ 
+      
+ 
+        
+ 
+ activate={activate}
+ 
+<input></input>
+<button>OK</button>
+<button>Reset</button>
+ 
+    font-size: 40px;
+ 
+eft:10px;
+ 
+/*
+ 
+    color: red;
+ 
+<input></input>
+<button>OK</button>
+<button>Reset</button>
+<SquareS/>
+<h1>Next player: X</h1>
+ 
+ {operate} <h1 id='B'>{B}</h1>  = {C}
+ 
+id='A'
+ 
+ id='All'
+ 
+<h1>Next player: X</h1>
+ 
+Square
+ 
+quare
+ 
+{SquareS}
+ 
+import TicTacToe from './component/TicTacToe'
+ 
+    function clickSquare(){alert('Hello')}
+    const DivSquare = [];
+    const size=3
+    for (let i = 0; i < size; i++) {
+        let lineSquare=[]
+    for (let j = 0; j < size; j++) {
+        // https://stackoverflow.com/questions/22876978/loop-inside-react-jsx
+        // https://reactjs.org/docs/lists-and-keys.html
+        let index=i.toString()+','+j.toString()
+        lineSquare.push(<Square key={index} id={index} onClick={clickSquare} activate={false}/>)
+    }
+        DivSquare.push(<div id={'DivSquare'+i.toString()}>{lineSquare}</div>)
+        // https://stackoverflow.com/questions/42790969/idiomatic-way-to-append-an-element-in-jsx
+}
+ 
+import Square from './Square'
+
+
+export default TicTacToe
+ 
+const SquareS = () => {
+    function clickSquare(){alert('Hello')}
+    const DivSquare = [];
+    const size=3
+    for (let i = 0; i < size; i++) {
+        let lineSquare=[]
+    for (let j = 0; j < size; j++) {
+        // https://stackoverflow.com/questions/22876978/loop-inside-react-jsx
+        // https://reactjs.org/docs/lists-and-keys.html
+        let index=i.toString()+','+j.toString()
+        lineSquare.push(<Square key={index} id={index} onClick={clickSquare} activate={false}/>)
+    }
+        DivSquare.push(<div id={'DivSquare'+i.toString()}>{lineSquare}</div>)
+        // https://stackoverflow.com/questions/42790969/idiomatic-way-to-append-an-element-in-jsx
+}
+
+    return (
+<>
+{DivSquare}
+</>
+    )
+}
+ 
+  //const styleObj = {
+  //  // https://www.pluralsight.com/guides/react-inline-styling
+  //  fontSize: 14,
+  //  color: "#4a54f1",
+  //  textAlign: "center",
+  //  paddingTop: "100px",
+  // }
+ 
+/component
+ 
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    justify-content: center;
+    align-items: center;
+ 
+    justify-content: center;
+    align-items: center;
+ 
+    
+ 
+    display: grid;
+    grid-template-columns: repeat(3, 5vw);
+        grid-template-rows: repeat(3, 5vw);
+ 
+ / repeat(10, 10px);
+ 
+            
+ 
+, 50px 1fr
+ 
+ button
+ 
+ style={{styleObj}}
+ 
+  document.getElementById('Square'+id.toString()).style.color = 'red'
+ 
+button
+ 
+    const listSquare = [];
+ 
+        //listSquare.push(<Square key={index} id={index} onClick={clickSquare} activate={false}/>);
+ 
+#DivSquare0{
+    color:red;
+    width:100px;
+    height: 100px;
+}
+ 
+
+// https://react.dev/reference/react-dom/client/createRoot
+ 
+import { createRoot } from 'react-dom/client';
+ 
 ToeTacTi
  
 list

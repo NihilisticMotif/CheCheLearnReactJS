@@ -14,7 +14,7 @@ const Calculator = () => {
   const [B, setB] = useState('0');
   const [C, setC] = useState('0');
   const [operate, setOperate] = useState('*');
-  const [Choose, setChoose] = useState(true)
+  const [Choose, setChoose] = useState(true);
 
   // --------------------------------------------------------
   // Utility Button
@@ -81,11 +81,11 @@ const Calculator = () => {
   // UI
   // --------------------------------------------------------
   return (
-    <div>
+    <div id='Calculator'>
       <h1 id='All'><h1 id='A'>{A}</h1> {operate} <h1 id='B'>{B}</h1>  = {C}</h1>
       <hr/>
       <h1>Utility Button</h1>
-      <MyButton name='OK'     onClick={clickOK} />
+      <MyButton name='Enter'     onClick={clickOK} />
       <MyButton name='AC'  onClick={clickReset} />
       <MyButton name='Delete' onClick={clickDelete} />
       <hr/>

@@ -1,9 +1,12 @@
 import './App.css';
 import Calculator from './MiniProjects/Calculator/index'
-import ToeTacTic  from './MiniProjects/ToeTacTic/index'
+import TicTacToe  from './MiniProjects/TicTacToe/index'
 function App() {
   return (
-    <Calculator/>
+    <>
+    <TicTacToe/>
+    {/*<Calculator/>*/}
+    </>
   );
 }
 
