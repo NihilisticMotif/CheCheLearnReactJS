@@ -9,7 +9,7 @@ To Do Now
 3. Custom Hook
 */
 
-const Calculator = () => {
+const Diculator = () => {
   const [A, setA] = useState('0');
   const [B, setB] = useState('0');
   const [C, setC] = useState('0');
@@ -107,4 +107,4 @@ const Calculator = () => {
   );
 }
 
-export default Calculator
+export default Diculator

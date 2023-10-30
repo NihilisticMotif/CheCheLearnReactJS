@@ -1,7 +1,7 @@
 import './Square.css';
 import {useState,useEffect} from 'react';
 
-const Square = ({id,XO,setXO,Note}) => {
+const Square = ({id,XO,setXO}) => {
   const [text,setText]=useState('-')
   const [activate,setActivate]=useState(true)
 
@@ -10,7 +10,6 @@ const Square = ({id,XO,setXO,Note}) => {
         setText(text);
         setActivate(false);
         setXO(bool)
-        Note()
     }
   }
   function handleClick(){
@@ -25,7 +24,7 @@ const Square = ({id,XO,setXO,Note}) => {
   );
 }
 
-const SquareS = ({size,XO,setXO,Note}) => {
+const SquareS = ({size,XO,setXO}) => {
     const DivSquare = [];
     for (let i = 0; i < size; i++) {
         let lineSquare=[]
@@ -33,7 +32,7 @@ const SquareS = ({size,XO,setXO,Note}) => {
         // https://stackoverflow.com/questions/22876978/loop-inside-react-jsx
         // https://reactjs.org/docs/lists-and-keys.html
         let index='['+i.toString()+','+j.toString()+']'
-        lineSquare.push(<Square key={index} id={index} XO={XO} setXO={setXO} Note={Note}/>)
+        lineSquare.push(<Square key={index} id={index} XO={XO} setXO={setXO}/>)
     }
         DivSquare.push(<div id={'DivSquare'+i.toString()}>{lineSquare}</div>)
         // https://stackoverflow.com/questions/42790969/idiomatic-way-to-append-an-element-in-jsx

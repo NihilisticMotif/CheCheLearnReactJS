@@ -1,3 +1,603 @@
+contents
+ 
+<button id='BBT'>OK</button><button id='BBT'>Reset</button></div>
+</>
+ 
+<div id='All'>
+ 
+<div id='All'><input id='Input' name='Input'></input><button id='BBT'>OK</button><button id='BBT'>Reset</button></div>
+<div id='All'><input id='Input' name='Input'></input><button id='BBT'>OK</button><button id='BBT'>Reset</button></div>
+ 
+<CRUDList/>
+ 
+<Person/>
+ 
+onClick={TotalReset}
+ 
+ onClick={TrueSetInput}
+ 
+value={nn} onChange={FakeSetInput}
+ 
+</div>
+ 
+<div>
+ 
+<input id='AddInput'></input>
+<button id='AddInput'>Add Input</button>
+ 
+/*
+const Input = ({size,setSize,PartialReset}) => {
+    const [nn,setNn]=useState(size)
+    function TotalReset(){
+        window.location.reload();
+    }
+    function TrueSetInput(){
+        // https://stackoverflow.com/questions/11563638/how-do-i-get-the-value-of-text-input-field-using-javascript
+        setSize(document.getElementById('Input').value)
+        PartialReset()
+    }
+    function FakeSetInput(event){
+        // https://bobbyhadz.com/blog/react-set-default-value-of-input
+        setNn(event.target.value)
+    }
+    return (
+<>
+<div id='All'><input id='Input' name='Input' value={nn} onChange={FakeSetInput}></input><button id='BBT' onClick={TrueSetInput}>OK</button><button id='BBT' onClick={TotalReset}>Reset</button></div>
+</>
+    )
+}
+*/
+ 
+</td>
+ 
+</table>
+ 
+<table>
+<tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Edit</th>
+    <th>Delete</th>
+</tr>
+ 
+<Input/>
+ 
+<div id='All'><h1 class='BBT'>Hello</h1><h1 class='BBT'>Hello</h1><button class='BBT'>Edit</button></div>
+ 
+<button class='BBT'>Delete</button>
+ 
+<table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+        </tr>
+        <tr>
+            <td>Anom</td>
+            <td>19</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>Megha</td>
+            <td>19</td>
+            <td>Female</td>
+        </tr>
+        <tr>
+            <td>Subham</td>
+            <td>25</td>
+            <td>Male</td>
+        </tr>
+    </table>
+ 
+    width:10px;
+ 
+border-
+ 
+</div>
+ 
+*/
+ 
+    display: inline-block;
+ 
+    display: inline-block;
+ 
+    display: inline-block;
+ 
+<input id='Input' name='Input'></input>
+ 
+onClick={TotalReset}
+ 
+onClick={TrueSetInput}
+ 
+value={nn} onChange={FakeSetInput}
+ 
+{size,setSize,PartialReset}
+ 
+    const [nn,setNn]=useState(size)
+    function TotalReset(){
+        window.location.reload();
+    }
+    function TrueSetInput(){
+        // https://stackoverflow.com/questions/11563638/how-do-i-get-the-value-of-text-input-field-using-javascript
+        setSize(document.getElementById('Input').value)
+        PartialReset()
+    }
+    function FakeSetInput(event){
+        // https://bobbyhadz.com/blog/react-set-default-value-of-input
+        setNn(event.target.value)
+    }
+ 
+value={nn} onChange={FakeSetInput}
+ 
+{size,setSize,PartialReset}
+ 
+    const [nn,setNn]=useState(size)
+    function TotalReset(){
+        window.location.reload();
+    }
+    function TrueSetInput(){
+        // https://stackoverflow.com/questions/11563638/how-do-i-get-the-value-of-text-input-field-using-javascript
+        setSize(document.getElementById('Input').value)
+        PartialReset()
+    }
+    function FakeSetInput(event){
+        // https://bobbyhadz.com/blog/react-set-default-value-of-input
+        setNn(event.target.value)
+    }
+ 
+        // Add a Service Button
+ 
+{/* Right UI Side */}
+ 
+{/* Left UI Side */}
+ 
+{/* HTML Tag for CSS */}
+ 
+{/* Left UI Side */}
+ 
+</>
+ 
+      
+ 
+      
+ 
+      
+ 
+    
+ 
+    
+ 
+        
+ 
+      
+ 
+    
+ 
+/*
+ 
+      <div className="output">
+ 
+      </div>
+ 
+    <form className="App" autoComplete="off">
+      <div className="form-field">
+ 
+      </div>
+    </form>
+ 
+</>
+ 
+    let List;
+ 
+    <ul>{listItems}</ul>
+ 
+    const people = [{
+  id: 0,
+  name: 'Creola Katherine Johnson',
+  profession: 'mathematician',
+}, {
+  id: 1,
+  name: 'Mario José Molina-Pasquel Henríquez',
+  profession: 'chemist',
+}, {
+  id: 2,
+  name: 'Mohammad Abdus Salam',
+  profession: 'physicist',
+}, {
+  name: 'Percy Lavon Julian',
+  profession: 'chemist',  
+}, {
+  name: 'Subrahmanyan Chandrasekhar',
+  profession: 'astrophysicist',
+}];
+    const listItems = people.map(person =>
+  <li>
+     <p>
+       <b>{person.name}:</b>
+       {' ' + person.profession + ' '}
+     </p>
+  </li>
+);
+ 
+    let TimeLine=[]
+    let TimeLines=[]
+    TimeLine.push(<History key={0} size={size} message={'Start Game'}/>)
+    TimeLines.push(<div id={'TimeLines'}>{TimeLine}</div>)
+ 
++i.toString()
+ 
+]}</div>
+ 
+<div id={'TimeLine'}>{[
+ 
+TimeLine.push(
+ 
+Start Game
+ 
+
+    }]
+
+ 
+    let TimeLine = [{
+        id: 0,
+        name: 'Start Game',
+        state: List,
+ 
+    // let List=[]
+    // for (let i = 0; i < size; i++) {
+    //     let Column=[]
+    // for (let j = 0; j < size; j++) {
+    //     Column.push(document.getElementById('Square['+i.toString()+','+j.toString()+']').textContent)
+    // }
+    //     List.push(Column)        
+    // }
+    // alert(List)
+
+ 
+// https://www.w3schools.com/jsref/prop_node_childnodes.asp
+    // https://stackoverflow.com/questions/13063801/find-a-nested-div-tag
+    // https://www.w3schools.com/jsref/prop_node_textcontent.asp
+ 
+
+    const chemists = people.filter(person =>
+  person.profession === 'chemist'
+);
+ 
+       known for {person.accomplishment}
+ 
+     <img
+       alt={person.name}
+     />
+ 
+       src={getImageUrl(person)}
+ 
+    
+    <button id='BBT' //onClick={TotalReset}
+    >
+        Show
+    </button>
+ 
+<History size={size}/>
+<History size={size}/>
+ 
+let List=[]
+ 
+let List=[]
+ 
+n
+ 
+//alert(document.getElementById('DivSquare').childNodes.length)
+ 
+.textContent
+ 
+.childNodes.length
+ 
+.childNodes
+ 
+length
+ 
+.childNodes
+ 
+.length
+ 
+.childNodes
+ 
+.childNodes
+ 
+.childNodes.length
+ 
+</div>
+ 
+    display: inline-block;
+ 
+    display: inline-block;
+ 
+*/
+ 
+const Body=({n2,XO,setXO,Handle})=>{
+    return(
+<>
+<hr/>
+<SquareS size={n2} XO={XO} setXO={setXO}/>
+<button onClick={Handle} XO={XO} setXO={setXO}>XO state Check</button>
+<hr/>
+<h1>Next player: X</h1>
+<History/>
+</>
+    )
+}
+ 
+export default History
+ 
+<div id='All'>
+    <button 
+        id='BBT' 
+        //onClick={TrueSetInput}
+    >
+        Turn 000
+    </button>
+    
+    <button id='BBT' //onClick={TotalReset}
+    >
+        Show
+    </button>
+    </div>
+ 
+    <input id='Input' name='Input' value={nn} onChange={FakeSetInput}></input>
+ 
+===undefined
+ 
+Total
+ 
+<div id='Body'>
+    
+    <SquareS size={n2} XO={XO} setXO={setXO}/>
+    <button onClick={Handle} XO={XO} setXO={setXO}>XO state Check</button>
+    <hr/>
+    <h1>Next player: X</h1>
+    <History/>
+</div>
+ 
+<hr/>
+ 
+    function ShowInput(){alert(nn)}
+ 
+<button onClick={ShowInput}>ShowInput</button>
+ 
+</>
+ 
+</div>
+ 
+value={3}
+ 
+n2,
+ 
+n2,
+ 
+n2,
+ 
+    const size=3;
+ 
+    const n2 = N2
+ 
+const N2 = () => {
+    // https://react.dev/learn/reusing-logic-with-custom-hooks
+    const [value, setValue] = useState(); 
+    function handleChange(e) {
+      setValue(e.target.value);
+    } 
+    const inputProps = {
+      value: value,
+      onChange: handleChange
+    };    
+    return inputProps;
+}
+ 
+{...n2}
+ 
+initialValue
+ 
+    function ResetClick()
+ 
+    alert(XO)
+ 
+XO={XO}
+ 
+    else{
+        setText('-');
+        setActivate(true);
+    };
+ 
+XO
+ 
+,XO,setXO
+ 
+XO===undefined || 
+ 
+ || XO===true
+ 
+    
+ 
+      
+ 
+    elif (){
+      WriteButton('X',true)
+    }
+ 
+    useEffect(()=>{
+        const LOL='O'
+        setXO(LOL)
+    },[]);
+ 
+'O'
+ 
+        //const LOL='O'
+        //setXO(LOL)
+ 
+bool)
+      setXO(
+ 
+        setXO('X')
+ 
+        setXO('O')
+ 
+        alert(XO)
+ 
+
+    const LOL='O'
+    setXO(LOL)
+ 
+        const LOL='O'
+setXO(LOL)
+        const LOL='O'
+setXO(LOL)
+        const LOL='O'
+setXO(LOL)
+ 
+    setXO('O')
+ 
+props.
+ 
+props.
+ 
+        alert(XO)
+ 
+    let message='X';
+    if(XO){
+        message='X';}
+    else{
+        message='O';}
+ 
+setX0('O')
+ 
+text
+ 
+
+  function handleClick() {
+  }
+ 
+      if (X0) {
+        WriteButton('X');
+        
+      }
+      else    {
+        WriteButton('O');
+        
+      }
+ 
+'X'
+ 
+ message={message}
+ 
+message,
+ 
+key={index}
+ 
+ message={message}
+ 
+ activate={activate}
+ 
+,message
+ 
+  let ModCount=0
+ 
+        alert(activate)
+ 
+        alert(activate)
+ 
+if(activate===true){
+        alert(activate)
+        setText('X');
+        setActivate(false);
+      }
+      else{
+        alert(activate)
+        setText('-');
+        setActivate(true);
+      };
+      //ModCount+=1
+      //if(ModCount===0){alert(ModCount)}
+      //if(ModCount===1){alert(ModCount)}
+      //if(ModCount===2){alert(ModCount)}
+      //if(ModCount===3){alert(ModCount)}
+ 
+  function WriteButton(){
+    if(activate===true){
+        alert(activate)
+        setText('X');
+        setActivate(false);
+    }
+    else{
+        alert(activate)
+        setText('-');
+        setActivate(true);
+    };
+  }
+ 
+,useEffect
+ 
+  useEffect(() => {
+  setActivate(tr)
+  }, []);
+ 
+import { useEffect } from 'react';
+ 
+       activate=true;
+ 
+        activate=false;
+ 
+  let activate=false;
+ 
+,activate
+ 
+ activate={false}
+ 
+message
+ 
+ModCount+=1
+ 
+ModCount+=1
+ 
+let ModCount=0
+ 
+ModCount+=1
+ 
+let ModCount=0
+ 
+        ModCount+=1
+ 
+ModCount+=1
+ 
+      if(activate){
+        setText(message);
+        activate=false;
+        setXO(false);
+      }
+      else{
+        setText('-');
+        activate=true;
+        setXO(true);
+      };
+ 
+,activate
+ 
+        setXO(false)
+ 
+        setXO(true)
+ 
+    */
+ 
+    /*
+ 
+    const [text,setText]=useState(true)
+ 
+    <Diculator/>
+ 
+/*
+ 
+*/}
+ 
 </>
  
 ,setDo

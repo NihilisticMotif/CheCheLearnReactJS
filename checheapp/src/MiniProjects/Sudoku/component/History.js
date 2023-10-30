@@ -1,26 +1,20 @@
-import {useState,useEffect} from 'react';
 import './History.css'
-
-const History = ({size,message}) => {
-    let List;
-    useEffect(() => {
-    let Lists=[]
+const History = ({size}) => {
+    function Handle(){
+    let List=[]
     for (let i = 0; i < size; i++) {
         let Column=[]
     for (let j = 0; j < size; j++) {
         Column.push(document.getElementById('Square['+i.toString()+','+j.toString()+']').textContent)
     }
-        Lists.push(Column)        
+        List.push(Column)        
     }
+    alert(List)
     // https://www.w3schools.com/jsref/prop_node_childnodes.asp
     // https://stackoverflow.com/questions/13063801/find-a-nested-div-tag
     // https://www.w3schools.com/jsref/prop_node_textcontent.asp
-    List=Lists
-    }, []);
+}
 
-    function Handle(){
-        alert(List)    
-    }
     return (
 <>
 <div id='All'>
@@ -28,7 +22,12 @@ const History = ({size,message}) => {
         id='BBT' 
         onClick={Handle}
     >
-        {message}
+        Turn 000
+    </button>
+    
+    <button id='BBT' //onClick={TotalReset}
+    >
+        Show
     </button>
     </div>
 </>
@@ -38,7 +37,9 @@ const History = ({size,message}) => {
 const HistoryS = ({size}) => {
     return (
 <div id='HistoryS'>
-<History key={0} size={size} message={'Start Game'}/>
+<History size={size}/>
+<History size={size}/>
+<History size={size}/>
 </div>
     )
 }

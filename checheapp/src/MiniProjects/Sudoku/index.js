@@ -30,13 +30,12 @@ const TicTacToe = () => {
     let NextPlayer;
     if(XO){NextPlayer='O'}
     else  {NextPlayer='X'}
-
     return (
 <div id='TicTacToe'>
 <Input size={size} setSize={setSize} PartialReset={PartialReset}/>
 <div key={seed}>
     <hr/>
-    <SquareS size={size} XO={XO} setXO={setXO} Note={Handle}/>
+    <SquareS size={size} XO={XO} setXO={setXO}/>
     <button onClick={Handle} XO={XO} setXO={setXO}>XO state Check</button>
     <hr/>
     <h1>Next player: {NextPlayer}</h1>
