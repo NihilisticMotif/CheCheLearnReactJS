@@ -1,0 +1,59 @@
+Project Status
+1. [0] = Did not Start
+2. [1] = Still do code
+3. [2] = Will Fix CSS, Add Photo and Description
+4. [3] = Finish
+
+Project List
+0. Main Page
+[0]: 0.1 Main Page
+1. App
+[1]: 1.1 CRUDTable
+ * Distribution Histogram
+ * X-Y Visualization
+ * Correlation Matrix 
+ * Neural Network Regression
+ * Random Forest Regression
+[2]: 1.2 Diculator
+[0]: 1.3 Calculator 
+[0]: 1.4 Calendar
+[0]: 1.5 Pixel Art Editor
+2. Grid Puzzle and Simulation
+[1]: 2.1 TicTacToe
+[0]: 2.2 Sudoku
+[0]: 2.3 Convey Game
+3. Numerical Analysis (Linear Algebra and Calculus)
+[0]: 3.1 MatrixMultiplication Calculator
+[0]: 3.2 Eigan Value Calculator
+[0]: 3.3 Gauss Elimination
+[0]: 3.4 Newton Mathod
+[0]: 3.5 Discrete Fourier Transform
+[0]: 3.6 Taylor Series
+[0]: 3.7 Euler Formula and Complex Plane Visualization
+[0]: 3.8 Estimated Integral
+4. Discrete Math (Graph Theory, Data Structure and Algorithm)
+[0]: 4.1 Path Finding
+[0]: 4.2 Sorting Algorithm
+[0]: 4.3 Linear Data Structure CRUD Evaluation
+[0]: 4.4 Count Straight Line in Grid
+[0]: 4.5 Matrix to Graph
+6. Physics
+[0]: 6.1 Double Pendulum
+[0]: 6.2 Sun, Earth and Moon Simulation
+[0]: 6.3 Wave function
+7. Geometry
+[0]: 7.1 Non Eucledean Visualization 
+[0]: 7.2 4D Graph Visualization 
+[0]: 7.3 GJK Algorithm
+
+Other Idea
+1. [Zach Star]: https://youtu.be/rowWM-MijXU?si=iqAnMkUSqYpYVikh
+2. [Fireship]: https://youtu.be/cWNEl4HE2OE?si=vT1sX05UxDn9fAbb
+3. [Reducible]: https://youtu.be/ngCos392W4w?si=q7Ps46_4oZ7ZjoKA
+4. [3Blue1Brown]: https://youtu.be/aircAruvnKk?si=m222IiPpYaWYOmIG
+5. [myphysicslab]: https://www.myphysicslab.com/pendulum/double-pendulum-en.html
+6. [Project Euler]: https://projecteuler.net/
+
+Note: 
+* This project is intented for practising programming and mathematical skill, so I code various random things.
+* Summary in Git Commit = Project Name that I did in that Day.

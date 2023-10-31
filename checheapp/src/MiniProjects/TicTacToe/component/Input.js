@@ -17,7 +17,10 @@ const Input = ({size,setSize,PartialReset}) => {
     }
     return (
 <>
-<div id='All'><input id='Input' name='Input' value={nn} onChange={FakeSetInput}></input><button id='BBT' onClick={TrueSetInput}>OK</button><button id='BBT' onClick={TotalReset}>Reset</button></div>
+<div id='All'>
+    <input id='Input' name='Input' value={nn} onChange={FakeSetInput}></input>
+    <button id='BBT' onClick={TrueSetInput}>OK</button>
+    <button id='BBT' onClick={TotalReset}>Reset</button></div>
 </>
     )
 }

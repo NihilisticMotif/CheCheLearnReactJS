@@ -1,30 +1,35 @@
-#Person {
-    font-family: Arial, Helvetica, sans-serif;
+#Table {
     border-collapse: collapse;
     width: 100%;
+    height: 20px;
 }
 
-#Person td,
-#Person th {
+#Table td,
+#Table th {
     border: 1px solid #ddd;
     padding: 8px;
 }
 
-#Person tr:nth-child(even) {
+#Table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-#Person tr:hover {
+#Table tr:hover {
     background-color: #ddd;
 }
 
-#Person th {
+#Table th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
     background-color: #0481aa;
     color: white;
 }
+
+#TableButton button {
+    font-size: 17px;
+}
+
 /*
 https: //www.w3schools.com/css/css_table.asp
 */

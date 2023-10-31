@@ -1,5 +1,9 @@
+#App {
+    border: 10px solid rgb(255, 255, 255);
+}
 #Body {
     border: 10px solid rgb(255, 255, 255);
+    display: flex;
 }
 #AddInput{
     height: 40px;

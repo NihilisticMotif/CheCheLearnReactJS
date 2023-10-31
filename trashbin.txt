@@ -1,3 +1,973 @@
+2. TicTacToe 
+ 
+<button>Export Data</button>
+ 
+
+// Utility
+// <button>Rename</button>
+// <button>Hide</button>
+// <button>Delete</button>
+ 
+button,
+ 
+font-size: 17px;
+ 
+ Prediction
+ 
+<button>Export Filtered Data</button>
+<button>Export Ploted Data</button>
+<button>Export Image</button>
+<button>Export Image</button>
+ 
+    width: 200px;
+ 
+    display: block;
+ 
+Full 
+ 
+<h1>Hello</h1>
+ 
+</div>
+ 
+            <button>Display</button>
+ 
+            <button>Display</button>
+ 
+<div id='Body'>
+</div>
+ 
+<ColumnEditor/>
+ 
+    border: 3px solid rgb(255, 255, 255);
+ 
+    padding: 10px;
+ 
+    display: block;
+ 
+    width: 700px
+ 
+    margin: auto;
+ 
+Column
+ 
+Column
+ 
+<button>Plot X</button>
+<button>Plot Y</button>
+ 
+<button>Hide</button>
+<button>Delete</button>
+ 
+<button>Rename</button>
+ 
+</div>
+ 
+<button>Replace</button>
+ 
+
+#DivInput button{
+      font-size: 17px;
+}
+ 
+#DivInput{
+    border-top: 10px solid rgb(0, 0, 0,0);
+}
+ 
+
+
+// <div id='All'><input id='Input' name='Input'></input><button id='BBT'>OK</button><button id='BBT'>Reset</button></div>
+ 
+// 
+// <Table ColumnList={ColumnList}/>
+ 
+    // CI = Column
+ 
+    // const handleServiceRemove = (index) => {
+    //   const list = [...ColumnList];
+    //   list.splice(index, 1);
+    //   setColumnList(list);
+    // };
+ 
+// map()
+// https://react.dev/learn/rendering-lists#where-to-get-your-key
+// https://stackoverflow.com/questions/72217570/insert-counter-in-a-reactjs-map
+ 
+</div>
+ 
+<ColumnEditor/>
+ 
+Component
+ 
+Component
+ 
+import FileSaving from "./component/Utility/FileSaving";
+ 
+<FileSaving/>
+ 
+/*
+ 
+.Name
+ 
+/index
+ 
+/index
+ 
+<
+ 
+import Input from './component/Pandas'
+import FileSaving from "./component/Pandas/component/Utility/FileSaving";
+ 
+import { useState } from 'react';
+import './Table.css';
+
+const Row=()=>{
+    return (
+<tr>
+    <td>0</td>
+    <td>Hello             </td>
+    <td>33             </td>
+    <td>Male             </td>
+    <td><button>Delete</button>     </td>
+</tr>
+    )
+}
+
+/*<button>Filter</button>
+<button>Inspection</button>
+<button>Rename</button>
+<button>Replace</button>
+<button>Plot X</button>
+<button>Plot Y</button>
+<button>Hide</button>
+<button>Delete</button>*/
+
+const Table = () => {
+    const ColumnList=[
+        'Mumu',
+        'CheChe',
+        'Tata'
+    ]
+    const ColumnHTML = ColumnList.map(Column => <th>{Column.Name}</th>);
+    const ColumnButton = ColumnList.map(Column=>
+        <td>
+            <div id='TableButton'>
+            <button>Edit</button>
+            <button>Display</button>
+            </div>
+        </td>
+        );
+    return (
+<>
+<table id='Table'>
+<tr>
+    {ColumnHTML}
+    <th>Delete  </th>
+</tr>
+<tr>
+    {ColumnButton}
+    <td>-</td>
+</tr>
+
+</table>
+</>
+    )
+}
+
+export default Table
+ 
+.OK {
+      font-size: 17px;
+    border: 1px solid rgb(205, 205, 205, 0);
+    border-left: 5px solid rgb(205, 205, 205, 0);
+    border-right: 5px solid rgb(205, 205, 205, 0);
+}
+
+#Inputs {
+        margin: auto;
+        border: 3px solid rgb(255, 255, 255);
+        background-color: rgb(116, 165, 42);
+        color: rgb(0, 0, 0);
+        padding: 10px;
+        display: block;
+        width:700px
+}
+
+#DivInput{
+    border-top: 10px solid rgb(0, 0, 0,0);
+}
+#DivInput button{
+      font-size: 17px;
+}
+ 
+import { useState } from 'react';
+import './index.css';
+import FileSaving from "./component/FileSaving";
+import Column from './component/Column';
+import SearchColumn from './component/SearchColumn';
+import AddNewColumn from './component/AddNewColumn';
+import Table from './component/Table';
+// map()
+// https://react.dev/learn/rendering-lists#where-to-get-your-key
+// https://stackoverflow.com/questions/72217570/insert-counter-in-a-reactjs-map
+
+const Pandas = () => {
+    // CI = Column
+    const [ColumnList,setColumnList]=useState([{Name: 'Row Index'}]);
+    // const handleServiceRemove = (index) => {
+    //   const list = [...ColumnList];
+    //   list.splice(index, 1);
+    //   setColumnList(list);
+    // };
+
+    const ColumnHTMLs = ColumnList.map((Name, index) => <Column index={index+1} key={index+1} Name={Name.Name}/>);
+    // https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key
+    // https://youtu.be/XtS14dXwvwE?si=rYQOe_tJbxmSnDWE
+    return (
+<>
+<div id='Inputs'>
+<FileSaving/>
+<hr/>
+<SearchColumn/>
+<hr/>
+{ColumnHTMLs}
+<hr/>
+<AddNewColumn ColumnList={ColumnList} setColumnList={setColumnList}/>
+<hr/>
+<div class='OK' id='DivInput'><button>OK</button><button>cancel</button></div>
+</div>
+<Table ColumnList={ColumnList}/>
+</>
+)
+}
+// 
+// <Table ColumnList={ColumnList}/>
+
+
+// <div id='All'><input id='Input' name='Input'></input><button id='BBT'>OK</button><button id='BBT'>Reset</button></div>
+export default Pandas
+ 
+{ColumnList}
+ 
+.Column {
+  display: inline-block;
+  font-size: 17px;
+}
+ 
+<td><button class='Columns'>Display</button></td>
+ 
+    function Hide()  {}
+    function Delete(){}
+ 
+
+    
+    
+    
+    
+    
+ 
+//const [IsRename,setIsRename]=useState(false)
+ 
+//function RenameOpen(){setIsRename(true)}
+ 
+import './FileSaving.css';
+ 
+<AddNewColumn ColumnList={ColumnList} setColumnList={setColumnList}/>
+<hr/>
+ 
+<div class='OK' id='DivInput'><button>OK</button><button>cancel</button></div>
+ 
+.OK {
+      font-size: 17px;
+    border: 1px solid rgb(205, 205, 205, 0);
+    border-left: 5px solid rgb(205, 205, 205, 0);
+    border-right: 5px solid rgb(205, 205, 205, 0);
+}
+
+#Inputs {
+        margin: auto;
+        border: 3px solid rgb(255, 255, 255);
+        background-color: rgb(116, 165, 42);
+        color: rgb(0, 0, 0);
+        padding: 10px;
+        display: block;
+        width:700px
+}
+
+#DivInput{
+    border-top: 10px solid rgb(0, 0, 0,0);
+}
+#DivInput button{
+      font-size: 17px;
+}
+ 
+.FileSaving {
+    display: inline-block;
+    font-size: 20px;
+    padding-right: 10px;
+}
+ 
+import './Column.css'
+ 
+import './Column.css'
+ 
+.AddColumn {
+    font-size: 17px;
+    border: 1px solid rgb(205, 205, 205, 0);
+    border-left: 5px solid rgb(205, 205, 205, 0);
+    border-right: 5px solid rgb(205, 205, 205, 0);
+}
+
+.Column {
+    display: inline-block;
+    font-size: 17px;
+}
+
+.Columns {
+    display: inline-block;
+    font-size: 17px;
+    border: 1px solid rgb(205, 205, 205, 0);
+    border-left: 5px solid rgb(205, 205, 205, 0);
+    border-right: 5px solid rgb(205, 205, 205, 0);
+}
+
+button.Columns,
+button {
+    border: 2px solid rgb(0, 0, 0);
+}
+
+ 
+<Table ColumnList={ColumnList}/>
+ 
+import Table from './component/Table';
+ 
+AddNew
+ 
+AddNew
+ 
+.AddColumn {
+    font-size: 17px;
+    border: 1px solid rgb(205, 205, 205, 0);
+    border-left: 5px solid rgb(205, 205, 205, 0);
+    border-right: 5px solid rgb(205, 205, 205, 0);
+}
+ 
+.Column{
+    display: inline-block;
+      font-size: 17px;
+}
+.Columns {
+    display: inline-block;
+      font-size: 17px;
+    border: 1px solid rgb(205, 205, 205,0);
+    border-left: 5px solid rgb(205, 205, 205, 0);
+    border-right: 5px solid rgb(205, 205, 205, 0);
+}
+
+button.Columns, button{
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.AddColumn {
+      font-size: 17px;
+    border: 1px solid rgb(205, 205, 205,0);
+    border-left: 5px solid rgb(205, 205, 205, 0);
+    border-right: 5px solid rgb(205, 205, 205, 0);
+}
+ 
+<td><button class='Columns'>Rename</button></td>
+ 
+{Column}
+ 
+    let index=0
+ 
+let index=0
+ 
+{//<button class='AddColumn' onClick={Hello}>Add Column</button>}
+// document.getElementById('Input').value 
+}
+ 
+<AddNewColumn ColumnList={ColumnList} setColumnList={setColumnList}/>
+ 
+<AddNewColumn ColumnList={ColumnList} setColumnList={setColumnList}/>
+ 
+key={key}
+ 
+<Table ColumnList={ColumnList}/>
+ 
+    
+ 
+        
+ 
+        
+ 
+            
+ 
+            
+ 
+/*<button>Filter</button>
+            <button>Inspection</button>
+            <button>Rename</button>
+            <button>Replace</button>
+            <button>Plot X</button>
+            <button>Plot Y</button>
+            <button>Hide</button>
+            <button>Delete</button>*/
+ 
+            
+ 
+            <button>Display</button>
+ 
+            
+ 
+</td>
+ 
+</td>
+ 
+    width:80px
+ 
+    display: block;
+ 
+    font-family: Arial, Helvetica, sans-serif;
+ 
+</div>
+ 
+            <button>Hide</button>
+ 
+ Column
+ 
+<td><h1 class='Columns'>{Name}</h1></td>
+ 
+<td><input class='Columns'></input></td>
+ 
+Name
+ 
+    const ColumnNames=ColumnNames
+ 
+const ColumnNames=[
+    'CheChe',
+    'Tata',
+    'Mumu'
+]
+ 
+const ColumnHTML = ColumnNames.map(Name => <th>{Name}</th>);
+const ColumnButton = ColumnNames.map(
+    Name=><td><button>Filter</button><button>Inspection</button><button>Replace</button><button>Select</button></td>
+    );
+ 
+Name => 
+ 
+<Table/>
+ 
+</>
+ 
+ColumnInput
+ 
+<Pandas/>
+ 
+5. Data Science (Statistic and Machine Learning)
+[0]: 5.1 Distribution Histogram
+[0]: 5.2 X-Y Visualization
+[0]: 5.3 Correlation Matrix 
+[0]: 5.4 Neural Network Regression
+[0]: 5.6 Random Forest Regression
+ 
+
+
+<Row/>
+<Row/>
+ 
+<tr>
+    <td>0</td>
+    <td>Hello             </td>
+    <td>33             </td>
+    <td>Male             </td>
+    <td><button>Delete</button>     </td>
+</tr>
+ 
+List
+ 
+CI
+ 
+setName
+ 
+setName
+ 
+CIs,setCIs
+ 
+ IsRRename={false}
+ 
+,IsRRename
+ 
+sRRename
+ 
+    else          {Column = <RenameColumnInput Name={Name} setIsRename={setIsRename}/>;}
+ 
+sRename
+ 
+IsRename
+ 
+,CIs,
+ 
+,RenameOK,RenameCancel
+ 
+function RenameOK(){
+ 
+    
+ 
+      
+ 
+      
+ 
+index={index} 
+ 
+ Inspection={Inspection}
+ 
+index={index} 
+ 
+ RenameOpen={RenameOpen}
+ 
+index,
+ 
+<div>
+<td><h1 class='ColumnInputs'>Rename: {Name} to </h1></td>
+<td><input class='ColumnInputs'></input></td>
+<td><button class='ColumnInputs' onClick={RenameOpen}>OK</button></td>
+<td><button class='ColumnInputs' onClick={RenameOpen}>Cancel</button></td>
+</div>
+ 
+,CIs,setCIs
+ 
+<div>
+<td><button class='ColumnInputs' onClick={Inspection}>{index}</button></td>
+<td><h1 class='ColumnInputs'>{Name}</h1></td>
+<td><input class='ColumnInputs'></input></td>
+<td><button class='ColumnInputs' onClick={RenameOpen}>Rename</button></td>
+<td><button class='ColumnInputs'>Hide</button></td>
+<td><button class='ColumnInputs'>Delete</button></td>
+</div>
+ 
+        With a population of about 2 million, Almaty is Kazakhstan's largest city. From 1929 to 1997, it was its capital city.
+      </Panel>
+ 
++openPopUp.toString()
+ 
+    
+ 
+        //alert(document.getElementById('PopUpInput').value)
+        // https://stackoverflow.com/questions/66292243/how-to-do-a-button-who-open-a-popup
+        //setOpenPopUp(prev => !prev);
+ 
+<td><button class='ColumnInputs' onClick={Inspection}>{index}</button></td>
+ 
+</div>
+ 
+{/*
+    <td><Popup trigger=
+                {<button class='ColumnInputs'>Rename</button>}
+                position="right center"
+                open={openPopUp}
+                closeOnDocumentClick={true}
+                >
+                {/* https://stackoverflow.com/questions/48817894/semantic-react-ui-popup-close-button }
+                <div>
+                <input  class='ColumnInputs' id='PopUpInput'></input>
+                <button class='ColumnInputs' onClick={RenameOK}>OK</button>
+                <button class='ColumnInputs' onClick={RenameCancel}>Cancel</button>
+                </div>
+            </Popup></td>
+*/}
+
+ 
+
+
+{//<td><button class='ColumnInputs' onClick={Rename}>{index}</button></td>
+}
+ 
+{//<td><button class='ColumnInputs' onClick={Rename}>{index}</button></td>
+}
+ 
+<div>
+    <button type='button' class='ColumnInputs' onClick={RenameOK}>Rename</button>
+    
+</div>
+ 
+openPopUp &&
+      <Popout url='popout.html' title='Rename'>
+        <div>
+<input  class='ColumnInputs' id='PopUpInput'></input>
+<button class='ColumnInputs' onClick={RenameOK}>OK</button>
+<button class='ColumnInputs' onClick={RenameCancel}>Cancel</button>
+</div>
+      </Popout>
+    }
+ 
+import Popout from "react-popout";
+// https://stackoverflow.com/questions/60881120/when-i-try-to-do-react-popout-example-its-not-working
+// https://www.npmjs.com/package/react-popout
+ 
+ Page
+ 
+ Puzzle and Simulation
+ 
+ url='popout.html'
+ 
+url='popout.html' title='Window title'
+ 
+<div>
+    <button type='button' class='ColumnInputs' onClick={RenameOK}>Create an area</button>
+    {openPopUp &&
+      <Popout url='popout.html' title='Window title'>
+        <div>test</div>
+      </Popout>
+    }
+</div>
+ 
+        setOpenPopUp(false)
+    }
+    
+    function handleVisibility() {
+ 
+alse
+ 
+onClick={
+ 
+Rename
+ 
+{/**/}
+ 
+Name=
+ 
+    let YourName=Name
+ 
+<td><Popup trigger=
+                {<button class='ColumnInputs'>{index}</button>}
+                position="right center"
+                show={true}
+                >
+                <div>
+                <input  class='ColumnInputs' id='PopUpInput'></input>
+                <button class='ColumnInputs' onClick={Rename}>OK</button>
+                </div>
+            </Popup></td>
+ 
+<td><button class='ColumnInputs'>Hide</button></td>
+ 
+alert
+ 
+alert('YourName')
+ 
+    function Close(){}
+ 
+                <button class='ColumnInputs' onClick={Popup.close}>cancel</button>
+ 
+Popup.close
+ 
+action: 
+ 
+onClick={ClosePopUp}
+ 
+    function ClosePopUp = () {setIsOpen(false)}
+ 
+        submitForm();
+ 
+unction
+ 
+const Columns=[
+    'Name',
+    'Age',
+    'Gender'
+];
+ 
+
+const AddNewColumn = ({CIs,setCIs}) => {
+    function handleClick(){
+        // https://stackoverflow.com/questions/31048953/what-are-these-three-dots-in-react-doing
+        let newInput=document.getElementById('ColumnName').value;
+        setCIs([...CIs, newInput]);
+    }
+    return (
+<div class='ColumnInput'>
+<h1 class='ColumnInputs'>Add New Column:</h1>
+<input class='ColumnInputs' id='ColumnName'></input>
+<button class='ColumnInputs' onClick={handleClick}>OK</button>
+</div>
+)
+}
+ 
+
+const AddNewColumn = ({CIs,setCIs}) => {
+    function handleClick(){
+        // https://stackoverflow.com/questions/31048953/what-are-these-three-dots-in-react-doing
+        let newInput=document.getElementById('ColumnName').value;
+        setCIs([...CIs, newInput]);
+    }
+    return (
+<div class='ColumnInput'>
+<h1 class='ColumnInputs'>Add New Column:</h1>
+<input class='ColumnInputs' id='ColumnName'></input>
+<button class='ColumnInputs' onClick={handleClick}>OK</button>
+</div>
+)
+}
+ 
+const SearchColumn = () => {
+    return (
+<div class='ColumnInput'>
+<h1 class='ColumnInputs'>Search:</h1>
+<input class='ColumnInputs'></input>
+<button class='ColumnInputs'>OK</button>
+</div>
+    )
+}
+
+ 
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
+// https://www.geeksforgeeks.org/how-to-create-popup-box-in-reactjs/
+ 
+const ColumnInput = ({index,Name,CIs,setCIs}) => {
+    let YourName=Name
+    function Rename(){alert('YourName')}
+    function Hide()  {}
+    function Delete(){}
+    return (
+<div class='ColumnInput'>
+{//<td><button class='ColumnInputs' onClick={Rename}>{index}</button></td>
+}
+
+<td><Popup trigger=
+                {<button class='ColumnInputs'>{index}</button>}
+                position="right center"
+                >
+
+                <div>
+                <input  class='ColumnInputs'></input>
+                <button class='ColumnInputs'>OK</button>
+                <button class='ColumnInputs'>cancel</button>
+                </div>
+            </Popup></td>
+<td><h1 class='ColumnInputs'>{YourName}</h1></td>
+<td><input class='ColumnInputs'></input></td>
+<td><button class='ColumnInputs'>Hide</button></td>
+<td><button class='ColumnInputs'>Delete</button></td>
+</div>
+    )
+}
+ 
+.ColumnInputs
+ 
+button
+ 
+GeeksforGeeks</div>
+ 
+ id='Rename'
+ 
+{/*
+ 
+*/}
+ 
+<Popup trigger=
+                {<button class='ColumnInputs'>{index}</button>}
+                position="right center">
+                <div>GeeksforGeeks</div>
+                <button>Click here</button>
+</Popup>
+ 
+position="right center"
+ 
+lass='ColumnInputs'
+ 
+            
+ 
+{returnEmpty}
+ 
+    function returnEmpty(){
+        if(CIs===[]){
+            return (<h1>Empty</h1>)
+        }
+    }
+ 
+.length
+ 
+if(CIs.length===0){}
+ 
+'CheChe','Mumu'
+ 
+    font-size: 20px;
+ 
+Name:
+ 
+// document.getElementById('Input').value
+ 
+<ColumnInput index={10} Name={'Ema'}/>
+ 
+Column
+ 
+const ColumnHTMLs = Columns.map((Column, index) => <ColumnInput index={index+=1} Name={Column}/>);
+ 
+    // Add New Column
+ 
+    // Find the Column
+ 
+// CI = ColumnInput
+ 
+2. Replace Data 
+ 
+#ColumnTable{
+border-collapse: collapse;
+}
+ 
+</table>
+ 
+<table id='ColumnTable'>
+    <tr>    
+    <th>Age         </th>
+    <th>Gender      </th>
+    <th>Delete      </th>
+    <th>Delete      </th>
+</tr>
+ 
+    <th>Delete      </th>
+ 
+</table>
+ 
+<table id='ColumnTable'>
+ 
+</table>
+ 
+/>
+ 
+const ColumnList=[
+    'Name',
+    'Age',
+    'Gender'
+]
+ 
+<SearchColumn/>
+<hr/>
+ 
+<button class='ColumnInputs'>Hide</button>
+<button class='ColumnInputs'>Delete</button>
+ 
+<button class='ColumnInputs'>00</button>
+ 
+{Name}
+ 
+<input class='ColumnInputs'></input>
+ 
+<ColumnInput/>
+ 
+    <td><button>Edit</button>       </td>
+ 
+    <td><button>Edit</button>       </td>
+ 
+    <td><button>Edit</button>       </td>
+ 
+    <td><button>Filter</button></td>
+ 
+    <th>Edit        </th>
+ 
+    border: 3px solid rgb(255, 255, 255,0);
+ 
+<hr/>
+ 
+<button class='ColumnInputs'>Rename</button>
+ 
+    margin: auto;
+ 
+    display: inline-block;
+ 
+<ColumnInput/>
+ 
+<div class='Input'>
+<h1 class='sInput'>H</h1><input class='sInput'></input>
+</div>
+<div class='Input'>
+<h1 class='sInput'>H</h1><input class='sInput'></input>
+</div>
+ 
+
+<div class='OK' id='DivInput'><button>OK</button><button>cancel</button></div>
+</div>
+ 
+<div id='Inputs'>
+<FileSaving/>
+<div class='Input'>
+<h1 class='sInput'>H</h1><input class='sInput'></input>
+</div>
+ 
+inline-
+ 
+<h1 class='Input'>H</h1><input class='Input'></input>
+<h1 class='Input'>H</h1><input class='Input'></input>
+ 
+</div>
+ 
+class='Input'
+ 
+class='Input'
+ 
+<button class='FileSaving'>Help</button>
+<button class='FileSaving'>Help</button>
+ 
+/component
+ 
+<FileSaving/>
+ 
+<FileSaving/>
+ 
+    display: flex;
+ 
+    display: inline-block;
+ 
+ button
+ 
+id='Inputs'
+ 
+<div class='Input' id='DivInput'><button>Import Data</button><button>Export Data</button></div>
+ 
+<div class='Input' id='DivInput'><button>OK</button><button>cancel</button></div>
+ 
+<div class='Input' id='DivInput'><button>Import Data</button><button>Export Data</button></div>
+ 
+</div>
+ 
+    display:list-item
+ 
+inline-block
+ 
+        width: 50%;
+ 
+ id='Inputs'
+ 
+class='Input'
+ 
+ and
+ 
+Will Fix CSS
+ 
+Still Do 
+1. 
+
+Achieve
+1. Diculator
+ 
+Want to do
+1. CRUDTable
+2. TicTacToe
+3. Calculator
+4. Convey Game
+5. Matrix Multiplication
+6. Distribution Histogram
+7. X-Y Plot
+8. Gauss Elimination
+ 
+Count Straight Line in Grid
+ 
+ * Count Straight Line in Grid
+ 
+ * Convey Game 
+ 
 contents
  
 <button id='BBT'>OK</button><button id='BBT'>Reset</button></div>
